@@ -1,0 +1,108 @@
+ <!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table Learning Website</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #e3a4f6, #6b73ff);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+        .header {
+            background: linear-gradient(to right, #f6a4e3, #736bff);
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            display: inline-block;
+            max-width: 80%;
+        }
+        .footer {
+            margin-top: 30px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .footer button {
+            background: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .footer button:hover {
+            background: #d1a4f6;
+        }
+        iframe {
+            width: 90%;
+            height: 500px;
+            border: none;
+            margin-top: 20px;
+        }
+        .explore-btn {
+            background-color: #ff9a9e;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 8px;
+    justify-content: center;
+    max-width: 90vw;
+    margin: auto;
+    padding: 40px;
+}
+
+.element {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.element:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+ .explore-title { 
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+ } 
+    </style>
+    
+</head>
+<body>
+    <div class="header">Welcome to Periodic Table Learning Website</div>
+    <div class="content">
+        <p>This website helps you explore the elements of the periodic table interactively. Click on "Explore" to view the table and learn more about each element.</p>
+    </div>
+    <div class="footer">
+        <button onclick="window.location.href='about.html'">About</button>
+        <button onclick="window.location.href='explore.html'">Explore</button>
+    </div>
+</body>
+</html>
